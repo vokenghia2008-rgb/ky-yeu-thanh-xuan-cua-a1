@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Kỉ Niệm Lớp 12</title>
+
+<style>
+body{
+    margin:0;
+    padding:60px 40px;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(120deg,#eaf3ff,#f6d9ff);
+}
+
+h1{
+    text-align:center;
+    color:#7a3db8;
+    margin-bottom:60px;
+    font-size:36px;
+}
+
+/* LƯỚI TỔNG */
+.memories{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:40px;
+    justify-items:center;
+}
+
+/* THẺ CHUNG */
+.card{
+    width:260px;
+    height:160px;
+    background:#f2f4f8;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+/* NGHIÊNG NHẸ */
+.card:nth-child(odd){ transform:rotate(-3deg); }
+.card:nth-child(even){ transform:rotate(3deg); }
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* ẢNH */
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* VIDEO */
+.card video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+/* VIDEO LÀM NỔI BẬT */
+.video{
+    grid-column: span 2;
+    width:560px;
+    height:320px;
+    transform:none !important;
+}
+</style>
+</head>
+
+<body>
+
+<h1>📸 Kỉ Niệm Lớp 12</h1>
+
+<div class="memories">
+
+    <!-- ẢNH -->
+    <div class="card"><img src="https://aicdn.picsart.com/3e30c82d-3c32-4cd7-91e2-40aa5c5766a4.jpg"></div>
+    <div class="card"><img src="https://aicdn.picsart.com/d3fb9b83-717a-4e08-9b4e-6ec8fa47a22f.png"></div>
+    <div class="card"><img src="https://aicdn.picsart.com/4dba8a40-c9c0-4e62-8960-865b9c440017.jpg"></div>
+    <div class="card"><img src="https://aicdn.picsart.com/3fcb7790-f94c-405f-9df9-25002e43fa90.jpg"></div>
+
+    <!-- VIDEO TRUNG TÂM -->
+    <div class="card video">
+        <video controls>
+            <source src="7466674368186.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- ẢNH -->
+    <div class="card"><img src="https://aicdn.picsart.com/6ce739a1-8ac3-45ac-98d1-3572ec39fdac.png"></div>
+    <div class="card"><img src="https://aicdn.picsart.com/dc572d7a-ab12-45a6-a44e-3241ea91ea15.jpg"></div>
+
+    <!-- VIDEO TRUNG TÂM -->
+    <div class="card video">
+        <video controls>
+            <source src="7466670125456.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- ẢNH -->
+    <div class="card"><img src="https://aicdn.picsart.com/8c3f0cd7-b854-476d-b7ac-801833e36cf1.jpg"></div>
+    <div class="card"><img src="https://aicdn.picsart.com/6d1518c1-7757-4c7a-ae71-01d4d6409b2c.jpg"></div>
+    <div class="card"><img src="https://aicdn.picsart.com/24532534-59e9-433c-9e4f-6c4f560abf5f.jpg"></div>
+    <div class="card"><img src="https://aicdn.picsart.com/bf1b60da-8708-47de-a563-6e3fa3f7313e.jpg"></div>
+
+</div>
+
+</body>
+</html>

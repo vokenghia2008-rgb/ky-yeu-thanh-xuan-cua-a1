@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kỉ Niệm Lớp 10</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(120deg, #ffe4ec, #ffd1dc);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff5e7e;
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .photo {
+            width: 240px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        /* tạo cảm giác lộn xộn nhưng KHÔNG chồng */
+        .photo:nth-child(odd) {
+            transform: rotate(-4deg);
+            margin-top: 20px;
+        }
+
+        .photo:nth-child(even) {
+            transform: rotate(5deg);
+            margin-bottom: 20px;
+        }
+
+        .photo:hover {
+            transform: scale(1.08);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📸 Kỉ Niệm Lớp 10</h1>
+
+    <div class="gallery">
+        <img src="https://aicdn.picsart.com/64836f84-622f-447a-8f5d-0a4877d30835.jpg" class="photo">
+        <img src="https://aicdn.picsart.com/d5c4a23b-275e-435a-ac9a-d45b34f84bd7.jpg" class="photo">
+        <img src="https://aicdn.picsart.com/e6d2071a-d550-4cc1-bb5f-01684cd37afd.jpg" class="photo">
+        <img src="https://aicdn.picsart.com/53e5c3be-291c-4b1e-818a-8020263429a0.jpg" class="photo">
+        <img src="https://aicdn.picsart.com/fd6615a3-6e0f-4f7a-9354-422475bc0c05.jpg" class="photo">
+        <img src="https://aicdn.picsart.com/c4cd1c26-b328-44c3-a072-cb3609c37ec8.jpg" class="photo">
+         <img src="https://aicdn.picsart.com/64836f84-622f-447a-8f5d-0a4877d30835.jpg" class="photo">
+         <img src="https://aicdn.picsart.com/afee0355-2e0d-4f62-93a4-c94212243432.png" class="photo">
+
+    </div>
+
+</body>
+</html>
